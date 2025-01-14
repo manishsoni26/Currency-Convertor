@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import InputBox from './components/InputBox'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
+import { ArrowDownUp } from 'lucide-react';
 
 function App() {
   const [amount,setAmount]=useState(0)
@@ -64,7 +65,7 @@ function App() {
                             border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5 w-10 h-7"
                             onClick={swap}
                             >
-                            <img src="./src/assests/swap.png" alt="" />
+                            <ArrowDownUp className="h-4"/>
                         </button>
                     </div>
                     <div className="w-full mt-1 mb-4">
