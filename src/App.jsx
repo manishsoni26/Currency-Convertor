@@ -32,13 +32,17 @@ function App() {
   // const convert=()=>setConvertedAmount(Math.round(amount*currencyInfo[to]))
   return (
     <div
-        className="w-full h-screen flex flex-wrap justify-center items-center bg-inherit lg:bg-cover bg-no-repeat "
+        className="w-full h-screen flex flex-wrap justify-center items-center  lg:bg-cover bg-no-repeat "
         style={{
             backgroundImage: `url(https://cdn.pixabay.com/photo/2018/11/22/23/57/london-3833039_1280.jpg)`
         }}
     >
         <div className="w-full">
-          <h1 className="text-5xl font-extrabold text-slate-200 text-center mb-3">CURRENCY CONVERTOR</h1>
+            <div className="text-5xl font-extrabold   mb-3 flex justify-center flex-col lg:flex-row items-center">
+            <h1 className="text-red-500">CURRENCY </h1>
+            <h1 className="text-slate-300">CONVERTOR</h1>
+
+            </div>
             <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
             <h1 className="font-bold text-xl text-center text-slate-300 lg:text-slate-600 shadow-text-shadow mb-3">Converting {from.toUpperCase()} To {to.toUpperCase()}</h1>
                 <form
